@@ -325,7 +325,7 @@ for nt=1:Nt
   PEw=PEw+K/2*sum(((y2-(Ly-R)).*(y2>Ly-R)).^2);
   
   C=C+sum(x1<R)+sum(y1<R)+sum(x2<R)+sum(y2<R);
-  C=C+sum(x1>Lx-R)+sum(x2>Lx-R)+sum(y1>Ly-R)+sum(y2>Ly-R);
+  C=C+sum(x1>Lx-R)+sum(x2>Lx-R)+sum(y1>Ly-R)+sum(y2>Ly-R); % total number of contacts
   
   for i=1:N
     % Left wall
